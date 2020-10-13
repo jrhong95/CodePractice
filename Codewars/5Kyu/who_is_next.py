@@ -2,10 +2,10 @@ import unittest
 
 
 def who_is_next(names, r):
-    r -= 1
+    r -= 1                      # list's index
     name_len = len(names)
     while r >= name_len:
-        r = (r - name_len) // 2
+        r = (r - name_len) // 2 # Go to previous index.
     return names[r]
 
 

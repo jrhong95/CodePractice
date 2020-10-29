@@ -1,5 +1,4 @@
 wh = []
-
 for _ in range(int(input())):
     w, h = map(int, input().split())
     wh.append((w, h))

@@ -8,10 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var userIsInTheMiddleTyping = false
-    @IBOutlet weak var display: UILabel!
+    private var userIsInTheMiddleTyping = false
+    @IBOutlet private weak var display: UILabel!
     
-    @IBAction func touchDigit(_ sender: UIButton){
+    @IBAction private func touchDigit(_ sender: UIButton){
         let digit = sender.currentTitle!
 
         if userIsInTheMiddleTyping{
@@ -23,11 +23,26 @@ class ViewController: UIViewController {
             userIsInTheMiddleTyping = true
         }
     }
-    @IBAction func performOperation(_ sender: UIButton) {
-        if let ops = sender.currentTitle{
-            if ops == "π"{
-                display.text = String(Double.pi)
-            }
+    
+    private var displayValue: Double{
+        get{
+            return Double(display.text!)!
         }
+        set{
+            display.text = String(newValue)
+        }
+    }
+    
+    private var oper = CalculatorModel()
+    
+    @IBAction private func performOperation(_ sender: UIButton) {
+        if userIsInTheMiddleTyping{
+            oper.setOperand(operand: displayValue)
+        }
+        
+        if let ops = sender.currentTitle{
+            oper.performOperation(symbol: ops)
+        }
+        displayValue = oper.result
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1183D2B2565484900B23683 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1183D2A2565484900B23683 /* CalculatorModel.swift */; };
 		F19CB6BD25510E44001DA242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19CB6BC25510E44001DA242 /* AppDelegate.swift */; };
 		F19CB6BF25510E44001DA242 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19CB6BE25510E44001DA242 /* SceneDelegate.swift */; };
 		F19CB6C125510E44001DA242 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19CB6C025510E44001DA242 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1183D2A2565484900B23683 /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 		F19CB6B925510E44001DA242 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19CB6BC25510E44001DA242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F19CB6BE25510E44001DA242 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F19CB6C525510E48001DA242 /* Assets.xcassets */,
 				F19CB6C725510E48001DA242 /* LaunchScreen.storyboard */,
 				F19CB6CA25510E48001DA242 /* Info.plist */,
+				F1183D2A2565484900B23683 /* CalculatorModel.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				F19CB6C125510E44001DA242 /* ViewController.swift in Sources */,
 				F19CB6BD25510E44001DA242 /* AppDelegate.swift in Sources */,
 				F19CB6BF25510E44001DA242 /* SceneDelegate.swift in Sources */,
+				F1183D2B2565484900B23683 /* CalculatorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

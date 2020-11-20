@@ -5,5 +5,6 @@
         <page name='UIKit Example'/>
         <page name='PlayGroundSupport Example'/>
         <page name='DataType example'/>
+        <page name='test'/>
     </pages>
 </playground>

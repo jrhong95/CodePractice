@@ -2,6 +2,7 @@
 
 import Foundation
 
-var str = "Hello, playground"
-
+func validBraces(_ string:String) -> Bool {
+    var list: 
+}
 //: [Next](@next)

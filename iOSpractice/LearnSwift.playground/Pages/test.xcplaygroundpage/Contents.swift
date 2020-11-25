@@ -2,7 +2,9 @@
 
 import Foundation
 
-func validBraces(_ string:String) -> Bool {
-    var list: 
+func find_missing(sequence:[Int]) -> Int {
+    return 0
 }
+
+find_missing(sequence: [1, 3, 5, 9, 11])
 //: [Next](@next)

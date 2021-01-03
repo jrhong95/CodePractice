@@ -11,6 +11,7 @@ print(myDouble, myInt)
 
 let myTuple2 = (count: 10, text: "hellohello")
 print(myTuple2.text)
+let n: Double = 123
 
 var index: Int? = 2
 var dogs = ["chiwawa", "biggle", "jindo"]
@@ -30,4 +31,14 @@ else{
     print("no!")
 }
 
+var integers = Array<Int>()
+integers.append(1)
+integers.append(11)
+integers[0]
+
+var doubles = [Double]()
+doubles.append(1.23)
+
+var chars: [Character] = []
+chars.append("s")
 //: [Next](@next)

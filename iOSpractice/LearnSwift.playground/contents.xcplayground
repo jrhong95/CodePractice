@@ -6,5 +6,6 @@
         <page name='PlayGroundSupport Example'/>
         <page name='DataType example'/>
         <page name='test'/>
+        <page name='Function'/>
     </pages>
 </playground>

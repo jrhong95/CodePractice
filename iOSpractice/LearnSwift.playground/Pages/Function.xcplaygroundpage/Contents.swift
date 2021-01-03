@@ -2,6 +2,8 @@
 
 import Foundation
 
-var str = "Hello, playground"
+func test(){
+    
+}
 
 //: [Next](@next)

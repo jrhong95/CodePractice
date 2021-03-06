@@ -8,9 +8,6 @@ if len(lier) == 1:
     parties = [read() for _ in range(M)]
     print(M)
 else:
-    # liers = [False] * (N + 1)
-    # for l in lier[1:]:
-    #     liers[l] = True
     liers = set(lier[1:])
 
     lier_add = True

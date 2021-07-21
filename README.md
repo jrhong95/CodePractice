@@ -1,3 +1,4 @@
 # CodePractice
-## 1 day 1 practice! Codewars or Baekjoon site
-## Study swift and iOS
+## 1 day N practice! Baekjoon or Programmers
+
+### Using python or java

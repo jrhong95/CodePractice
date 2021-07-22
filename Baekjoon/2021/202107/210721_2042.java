@@ -36,10 +36,11 @@ public class Main {
 
             if (a == 1) {
                 // update
-                update(1, S, 1, b, c - tree[S + b - 1]);
+                updateBU(b, c);
             } else {
                 // query
-                System.out.println(query(1, S, 1, b, (int) c));
+                // System.out.println(query(1, S, 1, b, c));
+                System.out.println(queryBU(b, (int) c));
             }
         }
     }
@@ -85,6 +86,42 @@ public class Main {
                 update(left, mid, node * 2, target, diff);
                 update(mid + 1, right, node * 2 + 1, target, diff);
             }
+        }
+    }
+
+    static long queryBU(int queryLeft, int queryRight) {
+        // leaf Left, Right 설정
+        int left = S + queryLeft - 1;
+        int right = S + queryRight - 1;
+
+        long sum = 0;
+        while (left <= right) {
+            // 좌측 노드가 홀수면 현재 노드값 사용하고 한칸 옆으로
+            if (left % 2 == 1) {
+                sum += tree[left++];
+            }
+            // 우측 노드가 짝수면 현재 노드값 사용하고 한칸 옆으로
+            if (right % 2 == 0) {
+                sum += tree[right--];
+            }
+            // 좌측, 우측 모두 부모 이동
+            left /= 2;
+            right /= 2;
+        }
+
+        return sum;
+    }
+
+    static void updateBU(int target, long value) {
+        // leaf 에서 target 찾음
+        int node = S + target - 1;
+        tree[node] = value;
+
+        // root까지 반복
+        node /= 2;
+        while (node > 0) {
+            tree[node] = tree[node * 2] + tree[node * 2 + 1];
+            node /= 2;
         }
     }
 }
